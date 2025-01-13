@@ -6,12 +6,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Nozama Galore</title>
   </head>
-  <body class="bg-gray-800 text-white">
+  <body class="bg-teal-200 text-white">
     <nav class="bg-gray-900 p-4 mb-6">
       <div
-        className="container max-w-6xl mx-auto flex flex-col sm:flex-row gap-8 items-center"
+        class="container max-w-6xl mx-auto flex flex-col sm:flex-row gap-8 items-center"
       >
-        <!-- Search -->
+        <!-- Search area -->
         <div class="relative w-full">
           <input
             type="text"
@@ -36,9 +36,58 @@
             <path d="M21 21l-6 -6" />
           </svg>
         </div>
-
-        <!-- Cart Icon -->
+        <span class="">Nozama</span>
+        <!-- Cart icon -->
+        <span class="relative text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            #
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
+            />
+            <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+          </svg>
+          <small
+            id="cart-count"
+            class="bg-red-500 text-xs text-white w-4 h-4 absolute -top-2 -right-2 rounded-full"
+            >0</small
+          >
+        </span>
       </div>
     </nav>
+
+    <!-- Main section -->
+    <main class="flex flex-col mx-auto container max-w-6xl md:flex-row">
+      <div class="space-y-4 p-2 w-full max-w-[10rem]">
+        <h2 class="text-2xl">Filters</h2>
+        <h3 class="text-xl">Category</h3>
+        <div class="text-xl space-y-2" id="filters-container">
+          <input type="checkbox" class="text-xl" id="camera" />
+          <label for="cameras">Cameras</label>
+        </div>
+        <div class="text-xl space-y-2" id="filters-container">
+          <input type="checkbox" class="text-xl" id="smartphones" />
+          <label for="smartphoness">Smartphones</label>
+        </div>
+        <div class="text-xl space-y-2" id="filters-container">
+          <input type="checkbox" class="text-xl" id="games" />
+          <label for="games">Games</label>
+        </div>
+        <div class="text-xl space-y-2" id="filters-container">
+          <input type="checkbox" class="text-xl" id="camera" />
+          <label for="cameras">Cameras</label>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
